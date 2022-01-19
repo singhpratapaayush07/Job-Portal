@@ -1,0 +1,59 @@
+<%- include('partials/header') -%>
+
+<h1>Welcome Admin!</h1>
+
+<p style="text-align:center">The enterd details will lead to generate link.</p>
+<hr>
+
+<div class="mycontainer">
+  <form action="/admin" method="post">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Company Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="companyname" placeholder="Company name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Batches</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="batchname" placeholder="Eligible Batches..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="location">Location</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="location" name="joblocation" placeholder="Location/WFH..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="JD">Job Link</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="JD" name="jobLink" placeholder="Enter original Job Link..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Remarks</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Optional.." style="height:60px"></textarea>
+      </div>
+    </div>
+    <div class="row btn-row">
+      <button type="submit" name="button" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
+
+
+<%- include('partials/footer') -%>

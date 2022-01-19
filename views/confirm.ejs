@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') -%>
+
+<div class="mycontainer">
+  <h1>Publish Link</h1>
+  Job Number:<%=data.num%><br>
+  Name:<%=data.name%><br>
+  Eligible Batches:<%=data.batch%><br>
+  Job Location:<%=data.location%>
+    <hr>
+  Message:<%=data.message %><hr>
+  <div class="d-grid gap-2 col-lg-6 col-md-12">
+    <a href="<%=publishingLink%>" class="btn btn-success btn-lg btn" role="button" target="_blank" >(Job link)</a>
+  </div>
+
+
+</div>
+
+
+<%- include('partials/footer.ejs') -%>

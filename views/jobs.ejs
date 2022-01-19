@@ -1,0 +1,32 @@
+<%- include("partials/header") -%>
+
+
+<div class="container-fluid" id="home-container">
+  <h1><%= compName %> Recruitment Drive 2022</h1>
+  <div class="row ">
+    <div class="col-lg-8 col-md-8 col-sm-10  left jobs-col">
+      <hr>
+      <h3>Company:<span> </span><%= compName%></h3><hr>
+      <h3>Eligible Batch:<span> </span><%= compBatch%></h3><hr>
+      <h3>Location:<span> </span><%= compLocation%></h3><hr>
+
+
+      <div class="d-grid gap-2 col-lg-6 col-md-12">
+        <br>
+        <a href="<%=compLink%>" class="btn btn-primary btn-lg btn" role="button" target="_blank" >Job link</a>
+
+
+        <a href="https://chat.whatsapp.com/CruGu4mOC15C8luo6y9Msc" target="_blank" class="btn btn-success btn-lg WhatsAp-btn" role="button" ><span class="whatsapp-icon"><i class="fa fa-whatsapp whatsapp-icon" style="font-size:160%;color:white"></i></span>Join for all UPDATES </a>
+
+      </div>
+
+
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-2 right fill">
+      <img src="/images/success.png" alt="">
+    </div>
+  </div>
+
+</div>
+
+<%- include("partials/footer") -%>

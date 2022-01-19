@@ -1,0 +1,35 @@
+<%- include('partials/header') -%>
+
+<div class="container-fluid" id="list-container">
+  <div class="row" >
+    <h2 >Companies</h2>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-10  left">
+
+      <ul class="home-ul">
+          <%comp.forEach(function(data){%>
+            <div class="li-parent">
+              <li class="list-li"><%=data.name%></li>
+              <a href="<%=data.retrievalName%>" target="_blank">Click Here</a>
+            </div>
+          <%});%>
+      </ul>
+
+      <div class="mydiv">
+      <a href="https://chat.whatsapp.com/CruGu4mOC15C8luo6y9Msc" target="_blank" class="btn btn-success btn-lg WhatsAp-btn" role="button" ><span class="whatsapp-icon"><i class="fa fa-whatsapp whatsapp-icon" style="font-size:160%;color:white"></i></span>Join for all UPDATES </a>
+      </div>
+
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-2 right jobList-fill">
+      <img src="/images/success.png" alt="">
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+<%- include('partials/footer') -%>
